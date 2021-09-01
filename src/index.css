@@ -1,13 +1,47 @@
-body {
+html,
+body,
+#viewDiv {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+#timeSliderDiv {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 20px;
+}
+#infoDiv {
+  height: 380px;
+  padding: 10px;
+  width: 320px;
+  /* opacity: 0.7; */
+}
+#infoDiv span {
+  color: #ff642e;
+  font-size: 12pt;
+  font-weight: bolder;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* esri overrides */
+.esri-widget {
+  border: 1px solid #444;
+}
+.esri-ui-corner .esri-component.esri-widget--panel {
+  width: 120px;
+}
+.esri-legend__service {
+  padding: 0;
+  padding-top: 4px;
+}
+.esri-time-slider__layout--wide .esri-time-slider__time-extent,
+.esri-time-slider__layout--compact .esri-time-slider__time-extent,
+.esri-time-slider__layout--wide .esri-time-slider__min,
+.esri-time-slider__layout--wide .esri-time-slider__max,
+.esri-time-slider__layout--compact .esri-time-slider__min-date,
+.esri-time-slider__layout--compact .esri-time-slider__max-date,
+.esri-legend__layer-caption {
+  display: none;
 }
